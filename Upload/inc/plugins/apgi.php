@@ -77,10 +77,10 @@ function apgi_profile (&$post) {
 	$usergroups_cache = $cache->read("usergroups");
 		
 	foreach ($u_groups as $groupID) {
-		$usergroup = $usergroups_cache[$groupID];
-		if (!empty($usergroup['image'])) {
+		$displaygroup = $usergroups_cache[$groupID];
+		if (!empty($displaygroup['image'])) {
 			$memprofile['additional_images'] .= "<div style='margin-top: 3px; padding: 0px;'></div>"; // Adding a <br /> tag between group images results in alignment issues on chrome. This seems to work better.  
-			eval("\$memprofile['additional_images'] .= \"".$templates->get("postbit_groupimage")."\";");
+			eval("\$memprofile['additional_images'] .= \"".$templates->get("member_profile_groupimage")."\";");
 		}
 	}
 	
