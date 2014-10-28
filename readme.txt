@@ -1,6 +1,6 @@
 By default, MyBB only displays the usergroup image for the primary usergroup on the user's postbit and profile. This plugin enables MyBB to display all usergroup images, and is tested and compatible with MyBB 1.6 and MyBB 1.8.
 
-The {$post['additional_groups']} variable will be used on the 'postbit' and 'postbit_classic' templates. You can remove or move these this variable to wherever you'd like. On user profiles, the variable for additional usergroup images will be the {$memprofile['additional_groups']} variable, found in the 'member_profile' template. If you do not wish for additional group images to be displayed on user profiles, you may remove this variable. 
+The {$post['additional_groups']} variable will be used on the 'postbit' and 'postbit_classic' templates. You can remove or move this variable to wherever you'd like. On user profiles, the variable for additional usergroup images will be the {$memprofile['additional_groups']} variable, found in the 'member_profile' template. If you do not wish for additional group images to be displayed on user profiles, you may remove this variable. 
 
 Please note that this plugin may not be compatible with highly customized themes by default if these themes remove the {$post['groupimage']} or the {$groupimage} variables from the postbit or the profile templates, respectively. If the plugin does not work with your theme, you will need to manually add these variables into your templates. 
 
