@@ -71,7 +71,7 @@ function apgi (&$post) {
 	return $post;
 }
 
-function apgi_profile (&$post) {
+function apgi_profile () {
 	global $mybb, $templates, $cache, $apgi, $templates, $memprofile, $groupimage;
 	$u_groups = explode(",", $memprofile['additionalgroups']);
 	$usergroups_cache = $cache->read("usergroups");
@@ -86,5 +86,4 @@ function apgi_profile (&$post) {
 	
 	$groupimage = str_replace('<br />', '', $groupimage); // chrome fix
 	$memprofile['additional_images'] .= "<div style='margin-top: 3px; padding: 0px;'></div>"; // padding fix
-	return $post;
 }
